@@ -1,0 +1,29 @@
+require("dotenv").config();
+
+//Modules
+const express = require("express");
+const mongoose = require("mongoose");
+const app = express();
+
+//Init
+const dbUrl = process.env.DATABASE_URL || "mongodb://localhost/menumetrics"
+mongoose.connect(dbUrl)
+.then(() => {
+    console.log("connected to DB");
+    app.listen(3000, () => {
+        console.log("listening on port 3000");
+    });
+})
+.catch((error) => {
+    console.log(error);
+})
+
+app.use(express.json());
+
+//Menu items
+const menuItemsRouter = require("./routes/menuitems");
+app.use("/menuitems", menuItemsRouter);
+
+//Restaurants
+const restautantsRouter = require("./routes/restaurants");
+app.use("/restaurants", restautantsRouter);
