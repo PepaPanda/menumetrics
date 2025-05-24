@@ -10,8 +10,8 @@ const dbUrl = process.env.DATABASE_URL || "mongodb://localhost/menumetrics"
 mongoose.connect(dbUrl)
 .then(() => {
     console.log("connected to DB");
-    app.listen(3000, () => {
-        console.log("listening on port 3000");
+    app.listen(process.env.PORT, () => {
+        console.log(`listening on port ${process.env.PORT}`)
     });
 })
 .catch((error) => {
