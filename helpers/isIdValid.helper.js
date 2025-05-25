@@ -1,6 +1,6 @@
 //Modules
-const mongoose = require("mongoose")
+const mongoose = require('mongoose')
 
-const isIdValidHelper = id => mongoose.Types.ObjectId.isValid(id);
+const isIdValidHelper = (id) => mongoose.Types.ObjectId.isValid(id)
 
-module.exports = isIdValidHelper;
+module.exports = isIdValidHelper
