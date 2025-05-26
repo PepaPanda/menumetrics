@@ -61,8 +61,7 @@ You need to have **MongoDB installed and running** on your system.
 
 ## 📫 API Documentation (For the reviewers/professors)
 
-See https://uuapp.plus4u.net/uu-managementkit-maing02/38744216cb324edca986789798259ba9/document?oid=67ab073fc7d8a680ccc1826c&pageOid=68299fa078599b743d8a65d2
-
+- [UUdocument here](https://uuapp.plus4u.net/uu-managementkit-maing02/38744216cb324edca986789798259ba9/document?oid=67b6f67824292539ed15249d&pageOid=67b6f68024292539ed152545)
 ---
 
 ## 📁 Project Structure
