@@ -3,6 +3,7 @@ require('dotenv').config()
 //Modules
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
 const app = express()
 
 //Init
@@ -20,6 +21,9 @@ mongoose
   })
 
 app.use(express.json())
+if (process.env.NODE_ENV === 'development') {
+  app.use(cors({ origin: 'http://localhost:5173' })); //Allow requests from vite dev server in development mode
+}
 
 //Menu items
 const menuItemsRouter = require('./routes/menuitems')
