@@ -9,7 +9,7 @@ This is a simple backend REST API built with Node.js, Express, Mongoose, and Zod
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/menumetrics.git
+git clone https://github.com/PepaPanda/menumetrics.git
 cd menumetrics
 ```
 
