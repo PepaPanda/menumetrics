@@ -7,7 +7,7 @@ module.exports = {
   restaurant: {
     notFound: (id) => `The restaurant with "${id}" was not found.`,
     notFoundInvalidIdFormat: (id) =>
-      `Restaurant could not be found. Given id "${id}" has invalid format.`,
+      `Restaurant could not be found. Given id "${id}" has invalid formatt.`,
     sameAddressExists: (address, alreadyExistingRestaurantName) =>
       `There is already a restaurant with the same address: "${address}". The name is "${alreadyExistingRestaurantName}".`,
   },
